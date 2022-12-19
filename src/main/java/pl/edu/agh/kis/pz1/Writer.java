@@ -9,15 +9,15 @@ public class Writer extends Thread {
         this.readingRoom = readingRoom;
     }
 
-
+    @Override
     public void run() {
         while (true)
         {
             try
             {
-                System.out.println(this + " wants to write");
+                System.out.println(this + " WANTS TO WRITE");
                 readingRoom.requestWrite();
-                System.out.println(this + " is writing\n.\n.\n.");
+                System.out.println(this + " IS WRITING\n.");
                 sleep(3000);
                 System.out.println(this + " FINISHED WRITING");
                 readingRoom.finishWrite();
@@ -31,8 +31,6 @@ public class Writer extends Thread {
     }
 
     public String toString() {
-        return "Writer " + id;
+        return "WRITER " + id;
     }
-
-
 }

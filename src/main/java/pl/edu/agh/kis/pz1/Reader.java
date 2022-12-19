@@ -9,7 +9,7 @@ public class Reader extends Thread {
         this.readingRoom = readingRoom;
     }
 
-
+    @Override
     public void run() {
         while (true)
         {
@@ -21,7 +21,7 @@ public class Reader extends Thread {
                 sleep(1000);
                 System.out.println(this + " finished reading");
                 readingRoom.finishRead();
-                sleep(5000);
+                sleep(3000);
             }
             catch (InterruptedException e)
             {

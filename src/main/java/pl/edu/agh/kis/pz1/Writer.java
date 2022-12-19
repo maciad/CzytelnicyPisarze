@@ -1,14 +1,29 @@
 package pl.edu.agh.kis.pz1;
 
+/**
+ * Class representing a writer in the reading room.
+ */
 public class Writer extends Thread {
+
     private final int id;
     private final ReadingRoom readingRoom;
 
+    /**
+     * Creates a new writer with the given id and reading room.
+     * @param id the id of the writer
+     * @param readingRoom the reading room
+     */
     public Writer(int id, ReadingRoom readingRoom) {
         this.id = id;
         this.readingRoom = readingRoom;
     }
 
+    /**
+     * Runs the thread in an infinite loop where it tries to access the reading room.
+     * When it gets access it prints a message and sleeps for 3 seconds,
+     * blocking access to the reading room.
+     * After it finishes it prints a message and sleeps for 10 seconds.
+     */
     @Override
     public void run() {
         while (true)
@@ -30,6 +45,9 @@ public class Writer extends Thread {
         }
     }
 
+    /**
+     * @return a string representation of the writer
+     */
     public String toString() {
         return "WRITER " + id;
     }

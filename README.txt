@@ -32,7 +32,7 @@ Ilość czytelników i pisarzy jest ustalana w klasie ReaderWriter w linijkach 1
 10 czytelników i 3 pisarzy. Wartości te można zmienić w kodzie źródłowym.
 
 4.2 Czasy oczekiwania
-Długość czasów oczekiwania są ustalane odpowiednio w klasach Reader i Writer w linijkach 36 i 36. Wartości te można
+Długość czasów oczekiwania są ustalane odpowiednio w klasach Reader i Writer w linijkach 36 i 39. Wartości te można
 zmienić w kodzie źródłowym (są tam wyrażane w milisekundach). Domyślnie wynoszą one:
 Czasy dostępu do zasobu (czas przebywania w czytelni):
 • Czytelnik – 1 sekunda

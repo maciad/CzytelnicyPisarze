@@ -38,17 +38,16 @@ public class Reader extends Thread {
                 readingRoom.finishRead();
                 sleep(3000);
             }
-            catch (InterruptedException e)
-            {
-                throw new RuntimeException(e);
+            catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
             }
         }
     }
 
     /**
-     *
      * @return a string representation of the reader
      */
+    @Override
     public String toString() {
         return "Reader " + id;
     }

@@ -38,9 +38,8 @@ public class Writer extends Thread {
                 readingRoom.finishWrite();
                 sleep(10000);
             }
-            catch (InterruptedException e)
-            {
-                throw new RuntimeException(e);
+            catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
             }
         }
     }
@@ -48,6 +47,7 @@ public class Writer extends Thread {
     /**
      * @return a string representation of the writer
      */
+    @Override
     public String toString() {
         return "WRITER " + id;
     }

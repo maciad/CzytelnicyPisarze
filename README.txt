@@ -28,12 +28,10 @@ Komunikaty dotyczące pisarzy są wyświetlane dużymi literami.
 4. Inne istotne informacje
 
 4.1 Ilość czytelników i pisarzy
-Ilość czytelników i pisarzy jest ustalana w klasie ReaderWriter w linijkach 16 i 20. Wartosci te wynoszą domyślnie
-10 czytelników i 3 pisarzy. Wartości te można zmienić w kodzie źródłowym.
+Ilość czytelników i pisarzy jest ustalana w klasie ReadersWriters w linijkach 16 i 20. Wartości te wynoszą domyślnie 10 czytelników i 3 pisarzy. Wartości te można zmienić w kodzie źródłowym.
 
 4.2 Czasy oczekiwania
-Długość czasów oczekiwania są ustalane odpowiednio w klasach Reader i Writer w linijkach 36 i 39. Wartości te można
-zmienić w kodzie źródłowym (są tam wyrażane w milisekundach). Domyślnie wynoszą one:
+Długość czasów oczekiwania są ustalane odpowiednio w klasach Reader i Writer w linijkach 57 i 60. Wartości te można zmienić w kodzie źródłowym (są tam wyrażane w milisekundach). Domyślnie wynoszą one:
 Czasy dostępu do zasobu (czas przebywania w czytelni):
 • Czytelnik – 1 sekunda
 • Pisarz – 3 sekundy
@@ -41,3 +39,5 @@ Czasy oczekiwanie przed ponowną próbą dostępu:
 • Czytelnik – 3 sekundy
 • Pisarz – 10 sekund
 
+4.3 Wielkość czytelni
+W czytelni może przebywać jednocześnie 5 czytelników lub 1 pisarz.

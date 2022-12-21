@@ -5,7 +5,14 @@ package pl.edu.agh.kis.pz1;
  */
 public class Reader extends Thread {
 
+    /**
+     * ID of the reader.
+     */
     private final int id;
+
+    /**
+     * Reading room in which the reader is.
+     */
     private final ReadingRoom readingRoom;
 
     /**
@@ -16,6 +23,20 @@ public class Reader extends Thread {
     public Reader(int id, ReadingRoom readingRoom) {
         this.id = id;
         this.readingRoom = readingRoom;
+    }
+
+    /**
+     * @return the id of the reader
+     */
+    public int getReaderId() {
+        return id;
+    }
+
+    /**
+     * @return the reading room
+     */
+    public ReadingRoom getReadingRoom() {
+        return readingRoom;
     }
 
     /**
